@@ -1,5 +1,28 @@
 # Guida per collaborare al progetto Controllo Accessi Gulli
 
+Diverse persone lavoreranno al progetto e quindi è stato scelto Git (https://en.wikipedia.org/wiki/Git_(software)) come strumento per gestire il lavoro svolto dai vari soggetti che potranno lavorare indioendentemente. Prima di descrivere le operazioni ed i comandi per usare git nelle varie situazioni di sviluppo del progetto occorre introdurre i vari repository di codice che verranno utilizzati:
+
+## Repository principale (on-line)
+
+E' il repository che conterrà la versione principale del progetto, detta "master", quella che riunirà i contributi dei vari sviluppatori. Il repository sarà ospitato sul sito GitHub ed in particolare nell'account del GULLi: https://github.com/gulli-livorno/controllo_accessi_gulli. 
+
+## Repository personale (on-line)
+
+E' il repository on-line che conterrà la copia modificata di ogni singolo sviluppatore. Ogni sviluppatore avrà quindi un account su Github e una copia (fork) del progetto principale fatta ad un particolare istante. Il repository personale conterrà quindi tutte le modifiche ed i contributi di ogni sviluppatore.
+
+Quando uno sviluppatore lo riterrà adeguato, potrà richiedere il "pull" della propria versione, cioè la richiesta di integrazione delle proprie modifiche nella versione principale del progetto. Il gestore del repository principale riceverà quindi una "Pull request". La richiesta mostrerà ogni singolo contributo dello sviluppatore che, se ritenuto valido, verrà accettato ed integrato nella versione "master".
+
+## Copia di sviluppo (off-line)
+
+E' la copia di lavoro che ogni sviluppatore ha sulla propria macchina. All'inizio dello sviluppo lo sviluppatore con un'apposito comando git "clone" crea una copia del progetto dal proprio account on-line su github sulla propria macchina di sviluppo. Durante lo sviluppo, le modifiche fatte sui vari files sorgenti vengono consegnate in gestione a git che le registra nei propri archivi interni, sempre residenti sulla macchina di sviluppo (operazioni di "commit").
+Quando lo sviluppatore vorrà condividere il proprio stato di sviluppo, effettuerà una operazione di "push" verso il proprio repository personale.
+
+## Considerazioni
+
+Questa architettura a tre repository, due on-line ed uno off-line, sembra complicata ma permette un'ampia libertà di sviluppo ed evita blocchi dovuti ad eventuali non disponibilità di altri sviluppatori.
+
+
+
 ### :white_small_square: 1. Creare un account su  Github ( https://github.com/join )
 ___
 ### :white_small_square: 2. SW da scaricare sul proprio PC
@@ -7,6 +30,7 @@ ___
 - [Arduino IDE SW ] (https://www.arduino.cc/en/Main/Software) (:raised_hand: chi ha già scritto e compilato almeno uno sketch su Arduino ce lo dovrebbe già avere )
 - [Git - distributed version control system ] (https://git-scm.com/)
 - [Una semplice guida a Git ] (http://rogerdudler.github.io/git-guide/index.it.html) (Opzionale)
+- [Pro Git] (https://progit2.s3.amazonaws.com/it/2015-03-30-25ee1/progit-it.427.pdf) (Opzionale, in inglese)
 
 ___
 
